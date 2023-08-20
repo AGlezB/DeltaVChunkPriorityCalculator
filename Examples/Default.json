@@ -1,0 +1,47 @@
+{
+  "Description": "",
+  "MarketPrices": [
+    {
+      "OreType": 0,
+      "Price": 20618.4
+    },
+    {
+      "OreType": 1,
+      "Price": 881.28
+    },
+    {
+      "OreType": 2,
+      "Price": 2524.42
+    },
+    {
+      "OreType": 3,
+      "Price": 2732.13
+    },
+    {
+      "OreType": 4,
+      "Price": 3034.67
+    },
+    {
+      "OreType": 5,
+      "Price": 6274.49
+    }
+  ],
+  "Chunk1": {
+    "OreType": 0,
+    "OreWeightKg": 500,
+    "WaterWeightKg": 200,
+    "TotalWeightKg": 700,
+    "RelativeSpeed": 15
+  },
+  "Chunk2": {
+    "OreType": 1,
+    "OreWeightKg": 1500,
+    "WaterWeightKg": 3700,
+    "TotalWeightKg": 5200,
+    "RelativeSpeed": -20
+  },
+  "RuleData": {
+    "ChunkPriceRule_RuleWeightMultiplier": "1",
+    "ChunkPriceRule_SliderValue": "0"
+  }
+}

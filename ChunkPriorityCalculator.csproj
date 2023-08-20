@@ -23,4 +23,14 @@
     </EmbeddedResource>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Examples\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Examples\Default.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

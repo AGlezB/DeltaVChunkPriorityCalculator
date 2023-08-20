@@ -1,5 +1,6 @@
 using ChunkPriorityCalculator.Model;
 using ChunkPriorityCalculator.Rules;
+using System.Reflection;
 using System.Text.Json;
 
 namespace ChunkPriorityCalculator
@@ -35,6 +36,9 @@ namespace ChunkPriorityCalculator
 			nudPricePt.Tag = OreType.Pt;
 			nudPriceV.Tag = OreType.V;
 			nudPriceW.Tag = OreType.W;
+
+			var exeDir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+			ofd.InitialDirectory = sfd.InitialDirectory = Path.Combine(exeDir!, "Examples");
 
 			CreateSampleValues();
 			Recalculate();
