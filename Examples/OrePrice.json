@@ -1,5 +1,5 @@
 {
-  "Description": "Example with default values for all rules.",
+  "Description": "Only consider the type of ore. Favors the most expensive ore regardless the the market value of the chunk.",
   "MarketPrices": [
     {
       "OreType": 0,
@@ -28,24 +28,24 @@
   ],
   "Chunk1": {
     "OreType": 0,
-    "OreWeightKg": 500,
-    "WaterWeightKg": 200,
-    "TotalWeightKg": 700,
-    "RelativeSpeed": 15
+    "OreWeightKg": 10,
+    "WaterWeightKg": 1000,
+    "TotalWeightKg": 1010,
+    "RelativeSpeed": 0
   },
   "Chunk2": {
     "OreType": 1,
-    "OreWeightKg": 1500,
-    "WaterWeightKg": 3700,
-    "TotalWeightKg": 5200,
-    "RelativeSpeed": -20
+    "OreWeightKg": 3000,
+    "WaterWeightKg": 1000,
+    "TotalWeightKg": 4000,
+    "RelativeSpeed": 0
   },
   "RuleData": {
-    "ChunkSpeedRule_RuleWeightMultiplier": "1",
+    "ChunkSpeedRule_RuleWeightMultiplier": "0",
     "ChunkSpeedRule_SliderValue": "0",
     "OrePriceRule_RuleWeightMultiplier": "1",
-    "OrePriceRule_SliderValue": "0",
-    "ChunkPriceRule_RuleWeightMultiplier": "1",
+    "OrePriceRule_SliderValue": "3",
+    "ChunkPriceRule_RuleWeightMultiplier": "0",
     "ChunkPriceRule_SliderValue": "0"
   }
 }
