@@ -114,6 +114,8 @@ namespace ChunkPriorityCalculator
 				},
 			};
 
+			txtDescription.Text = "Example with default values for all rules.";
+
 			_fillingValues = false;
 
 			if (fillValues)
@@ -193,6 +195,7 @@ namespace ChunkPriorityCalculator
 		{
 			var saveData = new SaveData()
 			{
+				Description = txtDescription.Text,
 				Chunk1 = uiChunk1.Chunk,
 				Chunk2 = uiChunk2.Chunk,
 				MarketPrices = _marketPrices?.Values,
@@ -234,6 +237,8 @@ namespace ChunkPriorityCalculator
 				}
 
 				_fillingValues = true;
+
+				txtDescription.Text = saveData.Description;
 
 				if (saveData.Chunk1 is not null)
 				{

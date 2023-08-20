@@ -59,6 +59,8 @@
 			tooltip = new ToolTip(components);
 			btnLoad = new Button();
 			btnSaveAs = new Button();
+			groupBox2 = new GroupBox();
+			txtDescription = new TextBox();
 			grpMarketPrices.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)nudPriceW).BeginInit();
 			((System.ComponentModel.ISupportInitialize)nudPriceV).BeginInit();
@@ -74,6 +76,7 @@
 			splitContainer1.Panel1.SuspendLayout();
 			splitContainer1.Panel2.SuspendLayout();
 			splitContainer1.SuspendLayout();
+			groupBox2.SuspendLayout();
 			SuspendLayout();
 			// 
 			// grpMarketPrices
@@ -232,13 +235,13 @@
 			// 
 			// grpRules
 			// 
-			grpRules.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+			grpRules.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
 			grpRules.Controls.Add(uisChunkPrice);
 			grpRules.Controls.Add(uisOrePrice);
 			grpRules.Controls.Add(uisChunkSpeed);
 			grpRules.Location = new Point(496, 90);
 			grpRules.Name = "grpRules";
-			grpRules.Size = new Size(498, 291);
+			grpRules.Size = new Size(333, 291);
 			grpRules.TabIndex = 1;
 			grpRules.TabStop = false;
 			grpRules.Text = "Rules";
@@ -252,7 +255,7 @@
 			uisChunkPrice.Rule = null;
 			uisChunkPrice.RuleDisplayName = "Market value of the chunk";
 			uisChunkPrice.RuleTooltip = "Priority based on the Market Value of the chunk.";
-			uisChunkPrice.Size = new Size(486, 80);
+			uisChunkPrice.Size = new Size(321, 80);
 			uisChunkPrice.TabIndex = 2;
 			uisChunkPrice.RuleChanged += ui_RuleChanged;
 			// 
@@ -264,7 +267,7 @@
 			uisOrePrice.Rule = null;
 			uisOrePrice.RuleDisplayName = "Market price of the ore";
 			uisOrePrice.RuleTooltip = "Priority based on the relative price of the ore.\r\nFor instance if Be is pricier than Fe then Be has higher priority.";
-			uisOrePrice.Size = new Size(486, 80);
+			uisOrePrice.Size = new Size(321, 80);
 			uisOrePrice.TabIndex = 1;
 			uisOrePrice.RuleChanged += ui_RuleChanged;
 			// 
@@ -276,7 +279,7 @@
 			uisChunkSpeed.Rule = null;
 			uisChunkSpeed.RuleDisplayName = "Speed of the chunk relative to the ship";
 			uisChunkSpeed.RuleTooltip = resources.GetString("uisChunkSpeed.RuleTooltip");
-			uisChunkSpeed.Size = new Size(486, 80);
+			uisChunkSpeed.Size = new Size(321, 80);
 			uisChunkSpeed.TabIndex = 0;
 			uisChunkSpeed.RuleChanged += ui_RuleChanged;
 			// 
@@ -366,8 +369,9 @@
 			// 
 			// btnNew
 			// 
+			btnNew.Anchor = AnchorStyles.Top | AnchorStyles.Right;
 			btnNew.Image = Properties.Resources.Oxygen_Icons_org_Oxygen_Actions_document_new_48;
-			btnNew.Location = new Point(799, 22);
+			btnNew.Location = new Point(635, 22);
 			btnNew.Name = "btnNew";
 			btnNew.Size = new Size(61, 58);
 			btnNew.TabIndex = 3;
@@ -377,8 +381,9 @@
 			// 
 			// btnLoad
 			// 
+			btnLoad.Anchor = AnchorStyles.Top | AnchorStyles.Right;
 			btnLoad.Image = Properties.Resources.Oxygen_Icons_org_Oxygen_Actions_document_open_48;
-			btnLoad.Location = new Point(866, 22);
+			btnLoad.Location = new Point(702, 22);
 			btnLoad.Name = "btnLoad";
 			btnLoad.Size = new Size(61, 58);
 			btnLoad.TabIndex = 4;
@@ -388,8 +393,9 @@
 			// 
 			// btnSaveAs
 			// 
+			btnSaveAs.Anchor = AnchorStyles.Top | AnchorStyles.Right;
 			btnSaveAs.Image = Properties.Resources.Oxygen_Icons_org_Oxygen_Actions_document_save_as_48;
-			btnSaveAs.Location = new Point(933, 22);
+			btnSaveAs.Location = new Point(769, 22);
 			btnSaveAs.Name = "btnSaveAs";
 			btnSaveAs.Size = new Size(61, 58);
 			btnSaveAs.TabIndex = 5;
@@ -397,11 +403,33 @@
 			btnSaveAs.UseVisualStyleBackColor = true;
 			btnSaveAs.Click += btnSaveAs_Click;
 			// 
+			// groupBox2
+			// 
+			groupBox2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+			groupBox2.Controls.Add(txtDescription);
+			groupBox2.Location = new Point(12, 387);
+			groupBox2.Name = "groupBox2";
+			groupBox2.Size = new Size(817, 126);
+			groupBox2.TabIndex = 6;
+			groupBox2.TabStop = false;
+			groupBox2.Text = "Description";
+			// 
+			// txtDescription
+			// 
+			txtDescription.Dock = DockStyle.Fill;
+			txtDescription.Location = new Point(3, 19);
+			txtDescription.Multiline = true;
+			txtDescription.Name = "txtDescription";
+			txtDescription.ScrollBars = ScrollBars.Vertical;
+			txtDescription.Size = new Size(811, 104);
+			txtDescription.TabIndex = 0;
+			// 
 			// Main
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
-			ClientSize = new Size(1006, 389);
+			ClientSize = new Size(841, 522);
+			Controls.Add(groupBox2);
 			Controls.Add(btnSaveAs);
 			Controls.Add(btnLoad);
 			Controls.Add(btnNew);
@@ -409,8 +437,8 @@
 			Controls.Add(grpRules);
 			Controls.Add(grpMarketPrices);
 			MaximizeBox = false;
+			MinimumSize = new Size(857, 561);
 			Name = "Main";
-			SizeGripStyle = SizeGripStyle.Hide;
 			StartPosition = FormStartPosition.CenterScreen;
 			Text = "Chunk Priority Calculator";
 			grpMarketPrices.ResumeLayout(false);
@@ -430,6 +458,8 @@
 			splitContainer1.Panel2.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
 			splitContainer1.ResumeLayout(false);
+			groupBox2.ResumeLayout(false);
+			groupBox2.PerformLayout();
 			ResumeLayout(false);
 		}
 
@@ -464,5 +494,7 @@
 		private Button btnSaveAs;
 		private SlidingRuleUI uisOrePrice;
 		private SlidingRuleUI uisChunkPrice;
+		private GroupBox groupBox2;
+		private TextBox txtDescription;
 	}
 }
