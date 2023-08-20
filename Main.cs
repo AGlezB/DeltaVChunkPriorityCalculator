@@ -108,8 +108,8 @@ namespace ChunkPriorityCalculator
 			_ruleEngine = new()
 			{
 				Rules = new IPriorityRule[] {
-					//_chunkSpeedRule,
-					//_orePriceRule,
+					_chunkSpeedRule,
+					_orePriceRule,
 					_chunkPriceRule,
 				},
 			};
