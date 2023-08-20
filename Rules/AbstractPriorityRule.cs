@@ -16,7 +16,7 @@ namespace ChunkPriorityCalculator.Rules
 
 		public virtual void Load(Dictionary<string, string> ruleData)
 		{
-			RuleWeightMultiplier = LoadDecimal(ruleData, $"{_tag}_{nameof(RuleWeightMultiplier)}") ?? 1;
+			RuleWeightMultiplier = LoadDecimal(ruleData, nameof(RuleWeightMultiplier)) ?? 1;
 		}
 
 		public virtual void Save(Dictionary<string, string> ruleData)
