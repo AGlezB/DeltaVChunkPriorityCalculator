@@ -78,7 +78,7 @@ namespace ChunkPriorityCalculator
 			lblValue.Text = trkSlider.Value.ToString();
 		}
 
-		private void FillValues()
+		public void FillValues()
 		{
 			_fillingValues = true;
 

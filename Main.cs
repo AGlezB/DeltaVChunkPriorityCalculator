@@ -271,6 +271,16 @@ namespace ChunkPriorityCalculator
 					}
 				}
 
+				var uiss = new SlidingRuleUI[] {
+					uisChunkPrice,
+					uisChunkSpeed,
+					uisOrePrice,
+				};
+				foreach (var uis in uiss)
+				{
+					uis.FillValues();
+				}
+
 				FillValues(true);
 				Recalculate();
 
