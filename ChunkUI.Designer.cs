@@ -158,6 +158,25 @@
 			label10.TabIndex = 10;
 			label10.Text = "Kg";
 			// 
+			// label11
+			// 
+			label11.AutoSize = true;
+			label11.Location = new Point(10, 185);
+			label11.Name = "label11";
+			label11.Size = new Size(75, 15);
+			label11.TabIndex = 16;
+			label11.Text = "Market Value";
+			// 
+			// label12
+			// 
+			label12.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+			label12.AutoSize = true;
+			label12.Location = new Point(184, 185);
+			label12.Name = "label12";
+			label12.Size = new Size(13, 15);
+			label12.TabIndex = 18;
+			label12.Text = "$";
+			// 
 			// cmbOreType
 			// 
 			cmbOreType.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
@@ -237,25 +256,6 @@
 			txtOreValue.Size = new Size(75, 23);
 			txtOreValue.TabIndex = 17;
 			txtOreValue.TextAlign = HorizontalAlignment.Right;
-			// 
-			// label11
-			// 
-			label11.AutoSize = true;
-			label11.Location = new Point(10, 185);
-			label11.Name = "label11";
-			label11.Size = new Size(57, 15);
-			label11.TabIndex = 16;
-			label11.Text = "Ore Value";
-			// 
-			// label12
-			// 
-			label12.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-			label12.AutoSize = true;
-			label12.Location = new Point(184, 185);
-			label12.Name = "label12";
-			label12.Size = new Size(13, 15);
-			label12.TabIndex = 18;
-			label12.Text = "$";
 			// 
 			// ChunkUI
 			// 
