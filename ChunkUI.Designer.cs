@@ -112,10 +112,10 @@
 			// label6
 			// 
 			label6.AutoSize = true;
-			label6.Location = new Point(10, 156);
+			label6.Location = new Point(10, 185);
 			label6.Name = "label6";
 			label6.Size = new Size(45, 15);
-			label6.TabIndex = 14;
+			label6.TabIndex = 17;
 			label6.Text = "Priority";
 			// 
 			// label7
@@ -161,20 +161,20 @@
 			// label11
 			// 
 			label11.AutoSize = true;
-			label11.Location = new Point(10, 185);
+			label11.Location = new Point(10, 156);
 			label11.Name = "label11";
 			label11.Size = new Size(75, 15);
-			label11.TabIndex = 16;
+			label11.TabIndex = 14;
 			label11.Text = "Market Value";
 			// 
 			// label12
 			// 
 			label12.Anchor = AnchorStyles.Top | AnchorStyles.Right;
 			label12.AutoSize = true;
-			label12.Location = new Point(184, 185);
+			label12.Location = new Point(184, 156);
 			label12.Name = "label12";
 			label12.Size = new Size(13, 15);
-			label12.TabIndex = 18;
+			label12.TabIndex = 16;
 			label12.Text = "$";
 			// 
 			// cmbOreType
@@ -240,21 +240,21 @@
 			// txtPriority
 			// 
 			txtPriority.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-			txtPriority.Location = new Point(106, 152);
+			txtPriority.Location = new Point(106, 181);
 			txtPriority.Name = "txtPriority";
 			txtPriority.ReadOnly = true;
 			txtPriority.Size = new Size(75, 23);
-			txtPriority.TabIndex = 15;
+			txtPriority.TabIndex = 18;
 			txtPriority.TextAlign = HorizontalAlignment.Right;
 			// 
 			// txtOreValue
 			// 
 			txtOreValue.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-			txtOreValue.Location = new Point(106, 181);
+			txtOreValue.Location = new Point(106, 152);
 			txtOreValue.Name = "txtOreValue";
 			txtOreValue.ReadOnly = true;
 			txtOreValue.Size = new Size(75, 23);
-			txtOreValue.TabIndex = 17;
+			txtOreValue.TabIndex = 15;
 			txtOreValue.TextAlign = HorizontalAlignment.Right;
 			// 
 			// ChunkUI
