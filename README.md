@@ -40,7 +40,7 @@ This resulted from testing different combinations:
 
 - [ChunkPriceRule](Rules/ChunkPriceRule.cs): Priority based on the market price of the chunk. 
 - [ChunkSpeedRule](Rules/ChunkSpeedRule.cs): Priority base on how fast the chunk is moving relative to the ship.
-- [OrePriceRule](Rules/OrePriceRule.cs): Priority based on the market price of the ore.- 
+- [OrePriceRule](Rules/OrePriceRule.cs): Priority based on the market price of the ore.
 
 Those rules cover the most relevant scenarios.
 I tested other rules but the benefits where marginal al best and they didn't add enough value to keep them
