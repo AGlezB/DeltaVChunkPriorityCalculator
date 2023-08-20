@@ -184,8 +184,8 @@ namespace ChunkPriorityCalculator
 
 			if (_marketPrices is not null)
 			{
-				uiChunk1.OreValue = uiChunk1?.Chunk?.OreType is not null && _marketPrices.TryGetValue(uiChunk1.Chunk.OreType.Value, out var mp1) ? mp1.Price * ((decimal)uiChunk1.Chunk.OreWeightKg / 1000) : 0;
-				uiChunk2.OreValue = uiChunk2?.Chunk?.OreType is not null && _marketPrices.TryGetValue(uiChunk2.Chunk.OreType.Value, out var mp2) ? mp2.Price * ((decimal)uiChunk2.Chunk.OreWeightKg / 1000) : 0;
+				uiChunk1.OreValue = uiChunk1.Chunk?.OreType is not null && _marketPrices.TryGetValue(uiChunk1.Chunk.OreType.Value, out var mp1) ? mp1.Price * ((decimal)uiChunk1.Chunk.OreWeightKg / 1000) : 0;
+				uiChunk2.OreValue = uiChunk2.Chunk?.OreType is not null && _marketPrices.TryGetValue(uiChunk2.Chunk.OreType.Value, out var mp2) ? mp2.Price * ((decimal)uiChunk2.Chunk.OreWeightKg / 1000) : 0;
 			}
 
 			FillValues();
@@ -213,6 +213,7 @@ namespace ChunkPriorityCalculator
 			{
 				File.WriteAllText(fileName, json);
 				ofd.InitialDirectory = sfd.InitialDirectory = Path.GetDirectoryName(fileName);
+				ofd.FileName = sfd.FileName;
 			}
 			catch (Exception ex)
 			{
@@ -285,6 +286,7 @@ namespace ChunkPriorityCalculator
 				Recalculate();
 
 				ofd.InitialDirectory = sfd.InitialDirectory = Path.GetDirectoryName(fileName);
+				sfd.FileName = ofd.FileName;
 			}
 			catch (Exception ex)
 			{
