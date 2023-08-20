@@ -209,6 +209,7 @@ namespace ChunkPriorityCalculator
 			try
 			{
 				File.WriteAllText(fileName, json);
+				ofd.InitialDirectory = sfd.InitialDirectory = Path.GetDirectoryName(fileName);
 			}
 			catch (Exception ex)
 			{
@@ -267,6 +268,8 @@ namespace ChunkPriorityCalculator
 
 				FillValues(true);
 				Recalculate();
+
+				ofd.InitialDirectory = sfd.InitialDirectory = Path.GetDirectoryName(fileName);
 			}
 			catch (Exception ex)
 			{
