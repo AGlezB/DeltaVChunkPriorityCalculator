@@ -1,5 +1,7 @@
 # Chunk Priority Calculator POC for _ΔV: Rings of Saturn_
 
+[![Licence](https://img.shields.io/badge/license-GPLv3-blue.svg?style=flat-square&label=License)](https://www.gnu.org/licenses/gpl-3.0.en.html)
+
 Proof of concept implementation of the 
 [Tug/Haul drone tuning rework](https://discord.com/channels/426287934870781952/1141162164770586624)
 community idea in the [Official Discord Server](https://discord.gg/dv).
